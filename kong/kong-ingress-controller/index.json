@@ -31,6 +31,10 @@
             {
                 "title": "Step 3 - Do more stuff",
                 "text": "step3.md"
+            },
+            {
+                "title": "Step 4",
+                "text": "step4.md"
             }
         ],
         "finish": {
