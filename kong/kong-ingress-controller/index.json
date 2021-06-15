@@ -17,12 +17,12 @@
         },
         "intro": {
             "text": "intro.md",
-            "courseData": "courseBase.sh",
             "credits": ""
         },
         "steps": [
             {
                 "title": "Step 1 - Test the environment",
+                "courseData": "courseBase.sh",
                 "text": "step1.md"
             },
             {
