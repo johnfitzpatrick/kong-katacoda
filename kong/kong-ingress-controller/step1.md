@@ -1,25 +1,40 @@
-We have set up a Kubernetes cluster just for you.
-On the right you can see the terminal of the `master` node, from which you can interact with the cluster using the `kubectl` tool, which is already configured.
+# Step 1
 
-For instance, you can get the details of the cluster executing `kubectl cluster-info`{{execute}}
+1. Is the cluster running
 
-You can view the nodes in the cluster with the command `kubectl get nodes`{{execute}}
+  ```
+  kubectl cluster-info
+  ```
 
-You should see 2 nodes: one master and a worker.
+1. Can I do stuff?
 
-Check that you are admin: `kubectl auth can-i create node`{{execute}}
+  ```
+  kubectl auth can-i create node
+  ```{{execute}}
 
-In order to follow this course, you will need a [Sysdig](http://sysdig.com/) Monitor account, with Administrator access privileges.
+1. Create namespace
+  ```
+  kubectl create namespace kong
+  ```{{execute}}
 
-This lab requires the following environment variables to be set:
+1. Create a licence - not sure this works
 
-- `SYSDIG_AGENT_ACCESS_KEY`: The agent access token. Needed for deploying the agent.
-- `SYSDIG_API_TOKEN`: The API token for Sysdig Monitor. Needed for creating the dashboards.
+  ```
+  kubectl create secret generic kong-enterprise-license --from-file=license=./license.json -n kong
+  ```{{execute}}
 
-You can find your Sysdig Agent Access Key in the Agent Installation tab of the Settings page, and your Sysdig Monitor API Token in the User Profile tab.
+1. Do the demokong thing
 
-`export SYSDIG_AGENT_ACCESS_KEY="your_own_access_key"`{{copy}}
+  ```
+  kubectl apply -f demokong-enterprise-0.10.yaml
+  ```{{execute}}
 
-`export SYSDIG_API_TOKEN="your_own_api_token"`{{copy}}
+  1. Create an Nginx pod and verify itCreate an Nginx pod and verify it
 
-After copying the commands, you can paste them in the interactive terminal using the right buttom of your mouse.  Remember to use **your own keys**.
+    ```
+    kubectl create -f https://k8s.io/examples/application/deployment.yaml --namespace kong
+    ```{{execute}}
+
+    ```
+    kubectl get pods -n kong
+    ```
