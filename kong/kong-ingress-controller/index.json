@@ -44,7 +44,7 @@
     },
     "environment": {
         "showdashboard": true,
-        "dashboards": [{ "name": "Sysdig Monitor", "href": "https://app.sysdigcloud.com/#/explore/overview/l:60" }],
+        "dashboards": [{ "name": "Kong Konnect", "href": "https://konnect.konghq.com/" }],
         "uilayout": "terminal-iframe",
         "uimessage1": "\u001b[32mYou are logged into the master node of your Kubernetes cluster.\u001b[m\r\n"
     },

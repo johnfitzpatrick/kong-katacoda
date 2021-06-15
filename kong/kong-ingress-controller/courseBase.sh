@@ -1,5 +1,4 @@
-until kubectl cluster-info
-do
-  echo Waiting for Kubernetes cluster
-  sleep 1
+
+while kubectl cluster-info > /dev/null 2>&1 ; [ $? -ne 0 ];do
+    sleep 2 ; echo Waiting for Kubernetes cluster
 done

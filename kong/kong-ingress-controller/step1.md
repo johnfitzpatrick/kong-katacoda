@@ -1,6 +1,6 @@
 # Step 1
 
-1. Is the cluster running
+1. Is the cluster running (might take a few seconds)
 
   ```
   kubectl cluster-info
