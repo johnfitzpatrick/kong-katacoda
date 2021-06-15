@@ -7,7 +7,7 @@
     "time": "30 minutes",
     "details": {
         "assets": {
-            "host01": [
+            "master": [
               { "file": "manifests/*.yaml", "target": "~/" },
               { "file": "manifests/*.yml", "target": "~/" },
               { "file": "*.yaml", "target": "~/", "chmod": "+x" },
