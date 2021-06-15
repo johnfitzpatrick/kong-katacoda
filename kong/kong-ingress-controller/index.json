@@ -22,6 +22,7 @@
         "steps": [
             {
                 "title": "Step 1 - Test the environment",
+                "foreground": "courseBase.sh",
                 "text": "step1.md"
             },
             {
