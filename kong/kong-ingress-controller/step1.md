@@ -4,7 +4,7 @@
 
   ```
   kubectl cluster-info
-  ```
+  ```{{execute}}
 
 1. Can I do stuff?
 
@@ -31,10 +31,10 @@
 
   1. Create an Nginx pod and verify itCreate an Nginx pod and verify it
 
-    ```
-    kubectl create -f https://k8s.io/examples/application/deployment.yaml --namespace kong
-    ```{{execute}}
+  ```
+  kubectl create -f https://k8s.io/examples/application/deployment.yaml --namespace kong
+  ```{{execute}}
 
-    ```
-    kubectl get pods -n kong
-    ```
+  ```
+  kubectl get pods -n kong
+  ```{{execute}}
