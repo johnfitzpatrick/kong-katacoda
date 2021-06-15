@@ -1,0 +1,12 @@
+{
+    "title": "Kong",
+    "private": false,
+    "description": "Learn the basics of Kong",
+    "courses": [
+      {
+          "course_id": "kong-ingress-controller",
+          "title": "Implement Kong Ingress Controller",
+          "description": "Learn how to implement Kong Ingress controller."
+      }
+    ]
+}
