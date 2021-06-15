@@ -4,8 +4,8 @@
     "description": "Implement Kong Ingress Controller.",
     "difficulty": "medium",
     "icon": "fa-kubernetes",
-    "private": true,
-    "time": "30 minutes", 
+    "private": false,
+    "time": "30 minutes",
     "details": {
         "assets": {
             "master": [
