@@ -5,7 +5,7 @@
     "difficulty": "medium",
     "icon": "fa-kubernetes",
     "private": true,
-    "time": "30 minutes",
+    "time": "30 minutes", 
     "details": {
         "assets": {
             "master": [
