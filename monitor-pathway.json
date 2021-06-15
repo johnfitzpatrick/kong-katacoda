@@ -1,111 +1,17 @@
 {
-    "title": "Sysdig Monitor",
-    "private": true,
-    "description": "Learn the basics of Sysdig Monitor",
+    "title": "Monitor",
+    "private": false,
+    "description": "Learn the basics of Monitor",
     "courses": [
       {
           "course_id": "k8s-platform-monitoring",
           "title": "Kubernetes platform monitoring",
           "description": "Use a Sysdig agent to scrape Kubernetes metrics from its internal components."
-      },{
-            "course_id": "voting-app-analysis",
-            "title": "Application Performance Analysis",
-            "description": "Monitor the key metrics of a WS application. Identify performance bottlenecks and scale the application."
-        },
-        {
-            "course_id": "voting-app-deployment",
-            "title": "Monitoring an Application Deployment",
-            "description": "Use Sysdig to explore and troubleshoot the errors produced after deploying an update to an application."
-        },
-        {
-            "course_id": "monitor-lab05",
-            "title": "Troubleshooting a Containerized App with Captures",
-            "description": "A dockerized app works well on the developer's laptop, but triggers errors when deployed on Kubernetes"
-        },
+      },
         {
             "course_id": "troubleshooting-crashloopbackoff",
             "title": "Troubleshooting CrashLoopBackoff with Sysdig Monitor",
             "description": "We deploy a multi-layered service, but the frontend pods die, becoming marked as CrashLoopBackOff"
-        },
-        {
-            "course_id": "understanding-promql",
-            "title": "Understanding PromQL",
-            "description": "An introduction to the PromQL query language."
-        },
-        {
-            "course_id": "instrumenting-with-prometheus-v2",
-            "title": "Instrumenting with Prometheus",
-            "description": "How to instrument your data in Prometheus"
-        },
-        {
-            "course_id": "prometheus-exporters",
-            "title": "Prometheus Exporters",
-            "description": "Prometheus Exporters"
-        },
-        {
-            "course_id": "prometheus-exporters-v2",
-            "title": "Prometheus Exporters",
-            "description": "Prometheus Exporters"
-        },
-        {
-            "course_id": "demo-envs",
-            "title": "Creating Demo Environments",
-            "description": "How to deploy a Demo Environment"
-        },
-        {
-            "course_id": "prometheus-sandbox",
-            "title": "Sandbox for testing stuff",
-            "description": "Sandbox for testing stuff"
-        },
-        {
-            "course_id": "promql-dashboards",
-            "title": "PromQL Dashboards",
-            "description": "PromQL Dashboards"
-        },
-        {
-            "course_id": "prometheus-nginx-exporter",
-            "title": "Scrape Prometheus metrics with Sysdig",
-            "description": "Learn how to configure your sysdig-agent to scrape a Prometheus endpoint"
-        },
-        {
-            "course_id": "sysdig-with-grafana",
-            "title": "Sysdig monitoring with Grafana",
-            "description": "Using Grafana dashboards with Sysdig as a scalable data source"
-        },
-        {
-            "course_id": "sysdig-with-grafana-and-prom",
-            "title": "Sysdig monitoring with Grafana and Prometheus",
-            "description": "Using Grafana dashboards with Sysdig as a scalable Prometheus data source"
-        },
-        {
-            "course_id": "prometheus-relabelling-oss",
-            "title": "Learn Prometheus relabelling",
-            "description": "Basic usage and configuration of relabelling rules for Prometheus Server"
-        },
-        {
-            "course_id": "prometheus-recording-rules",
-            "title": "Recording PromQL Rules",
-            "description": "How to record complex PromQL expressions"
-        },
-        {
-            "course_id": "sysdig-relabelling",
-            "title": "Relabelling Prometheus metrics with Sysdig",
-            "description": "Configure the sysdig-agent to relabel Prometheus metrics"
-        },
-        {
-            "course_id": "josh-env-debug",
-            "title": "Josh debug env",
-            "description": "This environment is a replica of the crashloopback one, with specified changes"
-        },
-        {
-            "course_id": "promql-by-example",
-            "title": "PromQL by Example",
-            "description": "PromQL by Example"
-        },
-        {
-            "course_id": "playground-prom",
-            "title": "Playground",
-            "description": "Playground"
         }
     ]
 }
