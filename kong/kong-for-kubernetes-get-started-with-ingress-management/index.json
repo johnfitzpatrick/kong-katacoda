@@ -24,7 +24,7 @@
         },
         "steps": [
             {
-                "title": "Step 1: Set up Kubernetes Cluster",
+                "title": "Step 1 - Verify Kubernetes Cluster",
                 "foreground": "courseBase.sh",
                 "text": "step01.md"
             },
@@ -65,7 +65,7 @@
                 "text": "step10.md"
             },
             {
-                "title": "Step 11 - Summary",
+                "title": "Summary",
                 "text": "step11.md"
             }
         ],

@@ -27,7 +27,7 @@ yes
 # Verify all the pods are running
 
 ```
-kubectl get pods --all-namespaces' Verify
+kubectl get pods --all-namespaces
 ```{{execute}}
 
 Kubernetes cluster launched successfully
