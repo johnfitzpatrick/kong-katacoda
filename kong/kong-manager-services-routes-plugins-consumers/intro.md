@@ -1,4 +1,7 @@
-# Intro
+
+Nothing to see here. Move along....
+
+<!-- # Intro
 
 Kong core entities are Services, Routes, Plugins and Consumers.  
 
@@ -28,4 +31,4 @@ In this learning lab, you will enable and configure these entities in Kong Manag
 
 1. Forward requests through Kong to a Microservice (API)
 
-2. Protect the Microservice with a Kong Authentication plugin (key-auth)
+2. Protect the Microservice with a Kong Authentication plugin (key-auth) -->
