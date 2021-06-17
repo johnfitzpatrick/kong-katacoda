@@ -29,6 +29,7 @@ service/kong-proxy created
 service/kong-validation-webhook created
 deployment.apps/ingress-kong created
 ```
+
 </details>
 
 
