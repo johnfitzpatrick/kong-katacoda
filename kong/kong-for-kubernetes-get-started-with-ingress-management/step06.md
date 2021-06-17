@@ -1,5 +1,3 @@
-# Set up Ingress Rule
-
 Let’s expose the echo service outside the Kubernetes cluster by defining Ingress rules.
 
 ## Add ingress resource for echo service
@@ -55,4 +53,5 @@ Test access to the echo service
 
 A response of  HTTP/1.1 200 OK means Kong successfully proxied the ingress traffic to the echo service and responded to the client accordingly.  
 
-Next Section: Protect Service with Rate Limiting
+**Next Section: **
+Protect Service with Rate Limiting

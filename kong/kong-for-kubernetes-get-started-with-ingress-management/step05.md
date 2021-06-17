@@ -1,5 +1,3 @@
-# Expose, Secure and Protect Service
-
 Now that we have the Kong Ingress Controller and our application deployed in Kubernetes, let’s expose the application by creating an Ingress, protect the application from denial of service attacks and assure reliability by enforcing rate limiting and let’s secure it by enforcing authentication.
 
 ## High Level Tasks
@@ -9,4 +7,5 @@ Now that we have the Kong Ingress Controller and our application deployed in Kub
 4. Apply Access Control List
 5. Secure Ingress with Open ID Connect (OIDC)
 
-Next Section: Set up Ingress Rule
+**Next Section: **
+Set up Ingress Rule

@@ -1,5 +1,3 @@
-# Deploy Sample Echo Service
-
 Let’s now deploy a sample [echo](https://github.com/kubernetes/kubernetes/blob/master/test/images/echoserver/README.md) service in Kubernetes to show case the capabilities of the Kong Ingress Controller.  
 
 Let’s now deploy a sample echo service in Kubernetes to show case the capabilities of the Kong Ingress Controller.  
@@ -36,4 +34,5 @@ The ready column displays two numbers: how many pods of a deployment are ready a
 
 You have now deployed a Kubernetes cluster, the Kong Ingress Controller and a sample application.
 
-Next Section: Expose, Secure and Protect Service
+**Next Section: **
+Expose, Secure and Protect Service

@@ -1,5 +1,3 @@
-# Deploy Kong Ingress Controller
-
 To manage Ingress traffic and access Services deployed in Kubernetes using Kong, let’s deploy the Kong Ingress Controller.  
 
 
@@ -10,6 +8,9 @@ Use the script below to deploy Kong Ingress Controller.
   ```
   . launch-kong.sh
   ```{{execute}}
+
+  <details>
+  <summary><b>Response</b></summary>
 
   ```
   namespace/kong created
@@ -28,6 +29,9 @@ Use the script below to deploy Kong Ingress Controller.
   service/kong-validation-webhook created
   deployment.apps/ingress-kong created
   ```
+  </details>
+
+
 
 ## Verify installation
 Run the following command to wait for Kubernetes Ingress Controller to deploy fully.
@@ -56,4 +60,5 @@ In about 45 seconds, if you check the pods in the kong namespace, Kong will be r
 
 Notice two containers have been deployed in the pod.  One container is the Kong Ingress Controller and the other is the Kong gateway.  
 
-Next Section: Set up environment variables
+**Next Section: **
+Set up environment variables

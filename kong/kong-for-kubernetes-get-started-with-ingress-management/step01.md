@@ -1,36 +1,33 @@
-# Set up Kubernetes Cluster
+# Check Kubernetes Cluster
 
-** DONT NEED THIS?? **
 
-Run this command in the terminal to bootstrap a lightweight Kubernetes cluster in your environment.
+1. Is the cluster running (might take a few seconds)
 
-The `launch-k3s.sh` script takes ~45 seconds to complete.
-
-  ```
-  ./launch-k3s.sh
-  ```{{execute}}
-
-<details>
-<summary><b>Response</b></summary>
-
-```The Kubernetes cluster is ready
-
-Verify all the pods are running with: 'kubectl get pods --all-namespaces' Verify Kubernetes cluster launched successfully
 ```
-</details>
+kubectl cluster-info
+```{{execute}}
 
-The `launch-k3s.sh` script launched a Kubernetes cluster using the K3s distribution, a lightweight Kubernetes distribution.
+```
+Kubernetes master is running at https://172.17.0.24:6443
+KubeDNS is running at https://172.17.0.24:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 
-  ```
-  kubectl get nodes
-  ```{{execute}}
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```
 
-<details>
-<summary><b>Response</b></summary>
+1. Check permissions
 
-Expected response (ensure that all nodes show Ready in the STATUS column):
+```
+kubectl auth can-i create node
+```{{execute}}
 
-NAME    STATUS   ROLES    AGE     VERSION]'[
-node1   Ready    master   2m46s   v1.17.0+k3s.1
+```
+yes
+```
 
-</details>
+# Verify all the pods are running
+
+```
+kubectl get pods --all-namespaces' Verify
+```{{execute}}
+
+Kubernetes cluster launched successfully
