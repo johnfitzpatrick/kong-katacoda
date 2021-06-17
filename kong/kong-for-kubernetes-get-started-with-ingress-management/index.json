@@ -6,6 +6,7 @@
     "icon": "fa-kubernetes",
     "private": false,
     "time": "30 minutes",
+    "lifetime": "60 minutes",
     "details": {
         "assets": {
             "master": [
