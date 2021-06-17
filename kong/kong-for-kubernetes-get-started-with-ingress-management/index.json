@@ -13,6 +13,7 @@
               { "file": "manifests/*.yml", "target": "~/" },
               { "file": "*.sh", "target": "~/", "chmod": "+x" },
               { "file": "*.yaml", "target": "~/", "chmod": "+x" },
+              { "file": "*.json", "target": "~/", "chmod": "+x" },
               { "file": "*.yml", "target": "~/", "chmod": "+x" }
             ]
         },
