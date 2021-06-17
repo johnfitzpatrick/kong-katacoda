@@ -1,0 +1,54 @@
+{
+  "pathwayTitle": "Kong",
+  "title": "Implement Kong Ingress Controller",
+    "description": "Implement Kong Ingress Controller.",
+    "difficulty": "medium",
+    "icon": "fa-kubernetes",
+    "private": false,
+    "time": "30 minutes",
+    "details": {
+        "assets": {
+            "master": [
+              { "file": "manifests/*.yaml", "target": "~/" },
+              { "file": "manifests/*.yml", "target": "~/" },
+              { "file": "*.yaml", "target": "~/", "chmod": "+x" },
+              { "file": "*.yml", "target": "~/", "chmod": "+x" }
+            ]
+        },
+        "intro": {
+            "text": "intro.md",
+            "credits": ""
+        },
+        "steps": [
+            {
+                "title": "Step 1 - Test the environment",
+                "foreground": "courseBase.sh",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - Do stuff",
+                "text": "step2.md"
+            },
+            {
+                "title": "Step 3 - Do more stuff",
+                "text": "step3.md"
+            },
+            {
+                "title": "Step 4",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{ "name": "Kong Konnect", "href": "https://konnect.konghq.com/" }],
+        "uilayout": "terminal-iframe",
+        "uimessage1": "\u001b[32mYou are logged into the master node of your Kubernetes cluster.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}

@@ -4,19 +4,30 @@
     "description": "Learn the basics of Kong",
     "courses": [
       {
-          "course_id": "kong-ingress-controller",
-          "title": "Implement Kong Ingress Controller",
-          "description": "Learn how to implement Kong Ingress controller."
-      },
-      {
           "course_id": "kong-manager-services-routes-plugins-consumers",
           "title": "Kong Manager: Services, Routes, Plugins and Consumers",
           "description": "Kong Manager: Services, Routes, Plugins and Consumers."
       },
       {
+          "course_id": "kong-authentication-authorization-oidc",
+          "title": "Governing API Access with Kong and OpenID Connect",
+          "description": "Governing API Access with Kong and OpenID Connect"
+      },
+      {
+          "course_id": "automating-the-dev-pipeline-rapidly-design-publish-and-consume-apis",
+          "title": "Automating the Dev Pipeline: Rapidly Design, Publish, and Consume APIs",
+          "description": "Automating the Dev Pipeline: Rapidly Design, Publish, and Consume APIs"
+      },
+
+      {
           "course_id": "kong-for-kubernetes-get-started-with-ingress-management/",
-          "title": "Kong for Kubernetes get started with Ingress Management",
+          "title": "Kong Ingress Controller",
           "description": "Kong for Kubernetes get started with Ingress Management."
+      },
+      {
+          "course_id": "kong-mesh-get-started",
+          "title": "Kong Mesh get started",
+          "description": "Use Service Mesh to Protect Secure and Observe Applications"
       }
     ]
 }
