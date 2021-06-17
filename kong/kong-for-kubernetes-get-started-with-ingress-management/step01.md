@@ -1,5 +1,7 @@
 # Set up Kubernetes Cluster
 
+** DONT NEED THIS?? **
+
 Run this command in the terminal to bootstrap a lightweight Kubernetes cluster in your environment.
 
 The `launch-k3s.sh` script takes ~45 seconds to complete.
@@ -7,8 +9,6 @@ The `launch-k3s.sh` script takes ~45 seconds to complete.
   ```
   ./launch-k3s.sh
   ```{{execute}}
-
-Response
 
 <details>
 <summary><b>Response</b></summary>

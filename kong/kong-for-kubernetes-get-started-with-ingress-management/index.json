@@ -44,27 +44,27 @@
                 "text": "step05.md"
             },
             {
-                "title": "Step 6 - Getting Started",
+                "title": "Step 6 - Set up Ingress Rule",
                 "text": "step06.md"
             },
             {
-                "title": "Step 7 - Set up Ingress Rule",
+                "title": "Step 7 - Protect Service with Rate Limiting",
                 "text": "step07.md"
             },
             {
-                "title": "Step 8 - Protect Service with Rate Limiting",
+                "title": "Step 8 - Secure Ingress with Key Authentication",
                 "text": "step08.md"
             },
             {
-                "title": "Step 9 - Secure Ingress with Key Authentication",
+                "title": "Step 9 - Apply Access Control List",
                 "text": "step09.md"
             },
             {
-                "title": "Step 10 - Apply Access Control List",
+                "title": "Step 10 - Secure Ingress with Open ID Connect (OIDC)",
                 "text": "step10.md"
             },
             {
-                "title": "Step 11 - Secure Ingress with Open ID Connect (OIDC)",
+                "title": "Step 11 - Summary",
                 "text": "step11.md"
             }
         ],

@@ -5,35 +5,29 @@ To manage Ingress traffic and access Services deployed in Kubernetes using Kong,
 
 ## Install Kong Ingress Controller
 
-The `launch-k3s.sh` script takes ~45 seconds to complete.
+Use the script below to deploy Kong Ingress Controller.
 
   ```
-  ./launch-kong.sh
+  . launch-kong.sh
   ```{{execute}}
 
-Response
-
-<details>
-<summary><b>Response</b></summary>
-
-```
-namespace/kong created
-secret/kong-enterprise-license created
-customresourcedefinition.apiextensions.k8s.io/kongclusterplugins.configuration.konghq.com created
-customresourcedefinition.apiextensions.k8s.io/kongconsumers.configuration.konghq.com created
-customresourcedefinition.apiextensions.k8s.io/kongcredentials.configuration.konghq.com created
-customresourcedefinition.apiextensions.k8s.io/kongingresses.configuration.konghq.com created
-customresourcedefinition.apiextensions.k8s.io/kongplugins.configuration.konghq.com created
-customresourcedefinition.apiextensions.k8s.io/tcpingresses.configuration.konghq.com created
-serviceaccount/kong-serviceaccount created
-clusterrole.rbac.authorization.k8s.io/kong-ingress-clusterrole created
-clusterrolebinding.rbac.authorization.k8s.io/kong-ingress-clusterrole-nisa-binding created
-configmap/kong-server-blocks created
-service/kong-proxy created
-service/kong-validation-webhook created
-deployment.apps/ingress-kong created
-```
-</details>
+  ```
+  namespace/kong created
+  secret/kong-enterprise-license created
+  customresourcedefinition.apiextensions.k8s.io/kongclusterplugins.configuration.konghq.com created
+  customresourcedefinition.apiextensions.k8s.io/kongconsumers.configuration.konghq.com created
+  customresourcedefinition.apiextensions.k8s.io/kongcredentials.configuration.konghq.com created
+  customresourcedefinition.apiextensions.k8s.io/kongingresses.configuration.konghq.com created
+  customresourcedefinition.apiextensions.k8s.io/kongplugins.configuration.konghq.com created
+  customresourcedefinition.apiextensions.k8s.io/tcpingresses.configuration.konghq.com created
+  serviceaccount/kong-serviceaccount created
+  clusterrole.rbac.authorization.k8s.io/kong-ingress-clusterrole created
+  clusterrolebinding.rbac.authorization.k8s.io/kong-ingress-clusterrole-nisa-binding created
+  configmap/kong-server-blocks created
+  service/kong-proxy created
+  service/kong-validation-webhook created
+  deployment.apps/ingress-kong created
+  ```
 
 ## Verify installation
 Run the following command to wait for Kubernetes Ingress Controller to deploy fully.
@@ -55,13 +49,11 @@ In about 45 seconds, if you check the pods in the kong namespace, Kong will be r
   kubectl get pods -n kong
   ```{{execute}}
 
-  <details>
-  <summary><b>Response</b></summary>
-
-  Expected response (ensure that all nodes show Ready in the STATUS column):
-
+  ```
   NAME           READY   STATUS    RESTARTS   AGE
   ingress-kong   2/2     Running   0          3m1s
-  </details>
+  ```
 
 Notice two containers have been deployed in the pod.  One container is the Kong Ingress Controller and the other is the Kong gateway.  
+
+Next Section: Set up environment variables
