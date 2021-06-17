@@ -1,0 +1,83 @@
+{
+  "pathwayTitle": "Kong",
+  "title": "Kong for Kubernetes get started with Ingress Management",
+    "description": "Implement Kong Ingress Controller.",
+    "difficulty": "medium",
+    "icon": "fa-kubernetes",
+    "private": false,
+    "time": "30 minutes",
+    "details": {
+        "assets": {
+            "master": [
+              { "file": "manifests/*.yaml", "target": "~/" },
+              { "file": "manifests/*.yml", "target": "~/" },
+              { "file": "*.sh", "target": "~/", "chmod": "+x" },
+              { "file": "*.yaml", "target": "~/", "chmod": "+x" },
+              { "file": "*.yml", "target": "~/", "chmod": "+x" }
+            ]
+        },
+        "intro": {
+            "text": "intro.md",
+            "credits": ""
+        },
+        "steps": [
+            {
+                "title": "Step 1: Set up Kubernetes Cluster",
+                "foreground": "courseBase.sh",
+                "text": "step01.md"
+            },
+            {
+                "title": "Step 2 - Deploy Kong Ingress Controller",
+                "text": "step02.md"
+            },
+            {
+                "title": "Step 3 - Set up environment variables",
+                "text": "step03.md"
+            },
+            {
+                "title": "Step 4 - Deploy Sample Echo Service",
+                "text": "step04.md"
+            },
+            {
+                "title": "Step 5 - Expose, Secure and Protect Service",
+                "text": "step05.md"
+            },
+            {
+                "title": "Step 6 - Getting Started",
+                "text": "step06.md"
+            },
+            {
+                "title": "Step 7 - Set up Ingress Rule",
+                "text": "step07.md"
+            },
+            {
+                "title": "Step 8 - Protect Service with Rate Limiting",
+                "text": "step08.md"
+            },
+            {
+                "title": "Step 9 - Secure Ingress with Key Authentication",
+                "text": "step09.md"
+            },
+            {
+                "title": "Step 10 - Apply Access Control List",
+                "text": "step10.md"
+            },
+            {
+                "title": "Step 11 - Secure Ingress with Open ID Connect (OIDC)",
+                "text": "step11.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{ "name": "Kong Konnect", "href": "https://konnect.konghq.com/" }],
+        "uilayout": "terminal-iframe",
+        "uimessage1": "\u001b[32mYou are logged into the master node of your Kubernetes cluster.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}
