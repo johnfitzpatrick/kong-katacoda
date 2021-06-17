@@ -19,23 +19,19 @@ service/kong-proxy patched
 kubectl get services -n kong kong-proxy
 ```{{execute}}
 
-    <details>
-    <summary>Optional Reading: Accessing the ingress proxy</summary>
+## Optional Reading: Accessing the ingress proxy
 
-        ```
-        kong-proxy is a Kubernetes Service. Kubernetes Services can be accessed in several ways (depending on cluster capabilities and the Service’s type), using:<br/>
+kong-proxy is a Kubernetes Service. Kubernetes Services can be accessed in several ways (depending on cluster capabilities and the Service’s type), using:<br/>
 
-            - a ClusterIP address which is available inside the cluster (to pods and nodes) and not outside,
+    - a ClusterIP address which is available inside the cluster (to pods and nodes) and not outside,
 
-            - a LoadBalancer address (which is typically available to anyone connecting to the cluster, and is the preferred way to expose the Kong proxy to the outer world) - this requires a cloud provider to be configured in the cluster (available out of the box for managed Kubernetes platforms such as AWS, Google Cloud, etc.),
+    - a LoadBalancer address (which is typically available to anyone connecting to the cluster, and is the preferred way to expose the Kong proxy to the outer world) - this requires a cloud provider to be configured in the cluster (available out of the box for managed Kubernetes platforms such as AWS, Google Cloud, etc.),
 
-            - a NodePort address (all Kubernetes nodes exposing the service on one, and the same everywhere, TCP/UDP port).
+    - a NodePort address (all Kubernetes nodes exposing the service on one, and the same everywhere, TCP/UDP port).
 
-        Here we have set up Kong’s proxy (which is the gateway for all the requests to applications we’ll expose via Kong) to expose both a ClusterIP and a LoadBalancer address. Since our Kubernetes cluster (created by K3s) is very simple, it does not support LoadBalancer (more precisely: there is no cloud provider running in our cluster that knows how to configure an external load balancer). Managed Kubernetes clusters (AWS EKS, Google Cloud GKE, etc.) typically support LoadBalancer out of the box.
+Here we have set up Kong’s proxy (which is the gateway for all the requests to applications we’ll expose via Kong) to expose both a ClusterIP and a LoadBalancer address. Since our Kubernetes cluster (created by K3s) is very simple, it does not support LoadBalancer (more precisely: there is no cloud provider running in our cluster that knows how to configure an external load balancer). Managed Kubernetes clusters (AWS EKS, Google Cloud GKE, etc.) typically support LoadBalancer out of the box.
 
-        In the command in the section above, we’ve set PROXY_IP to point to kong-proxy’s ClusterIP address. This means that making requests to this address will work from any Kubernetes node in the cluster.
-        ```
-    </details>
+In the command in the section above, we’ve set PROXY_IP to point to kong-proxy’s ClusterIP address. This means that making requests to this address will work from any Kubernetes node in the cluster.
 
 
 ## Verify setup
